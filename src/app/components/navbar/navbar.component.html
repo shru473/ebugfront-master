@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+
+  
+  <a routerLink="/" mat-icon-button class="example-icon  favorite-icon ml20 mr10" aria-label="Example icon-button with menu icon">
+    <img routerLink="/"
+    width="40"
+    height="50"
+    alt="Angular Logo"
+    src="https://freepngimg.com/thumb/bugs/31420-7-bug-icon-transparent.png"
+  >
+  </a>
+  <br> 
+
+
+  <span> E-BUG TRACKER</span>
+  <span class="example-spacer"></span>
+
+  <a routerLink="/" mat-icon-button class="example-icon favorite-icon ml20 mr10"
+    aria-label="Example icon-button with heart icon">
+    Home
+  </a>
+
+  <a [routerLink]="'/about-us'" mat-icon-button class="example-icon favorite-icon ml20 mr20"
+    aria-label="Example icon-button with heart icon">
+    About Us
+  </a>
+  <a [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon ml20 mr20"
+    aria-label="Example icon-button with heart icon">
+    Login
+  </a>
+
+
+
+<a [routerLink]="'/signup'"mat-raised-button color="accent" routerLink="signup"> Sign-up</a>
+
+
+</mat-toolbar>

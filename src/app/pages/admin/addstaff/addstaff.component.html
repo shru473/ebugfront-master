@@ -1,0 +1,53 @@
+<br><br>
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+          <div class="container text-center">
+
+            <img src="../../../assets/logo.jpg" alt="">
+          </div>
+          <h1 class="text-center">Register Here !!</h1>
+
+          <!--{{staff | json}}-->
+
+          <form (ngSubmit)="formSubmit()">
+
+
+
+            <!--firstname field-->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input required [(ngModel)]="staff.fname" name="fname" matInput placeholder="Enter here">
+            </mat-form-field>
+
+            <!--lastname field-->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input required [(ngModel)]="staff.lname" name="lname" matInput placeholder="Enter here">
+            </mat-form-field>
+
+            <!--email field-->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Email Address</mat-label>
+              <input required [(ngModel)]="staff.emailid" name="emailid" type="email" matInput placeholder="Enter here">
+            </mat-form-field>
+
+
+
+
+
+            <div class="conatiner text-center">
+
+              <button type="submit" mat-raised-button color="primary">Register</button>
+
+            </div>
+
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>

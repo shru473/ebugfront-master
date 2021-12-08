@@ -1,0 +1,39 @@
+
+<br><br>
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+          
+            <h1 class="text-center">Assign Bug!!</h1>
+
+          <!-- {{staff | json}} -->
+
+          <form (ngSubmit)="formSubmit()">
+         
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Bug Id</mat-label>
+              <input required [(ngModel)]="bug2.bugid" name="bugid" matInput placeholder="Enter here">
+            </mat-form-field>
+
+            
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Staff Id</mat-label>
+              <input required [(ngModel)]="bug2.staffid" name="staffid" matInput placeholder="Enter here">
+            </mat-form-field>
+
+           
+            <div class="conatiner text-center">
+
+              <button type="submit" mat-raised-button color="primary">Submit</button>
+
+            </div>
+
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>

@@ -1,0 +1,62 @@
+<section class="home">
+    <img src="../../assets/back.png">
+
+    <!-- <div class="homecontent">
+      <h1>Boost Productivity</h1>
+      <h2>with E-Bug Tracker</h2>
+      <h3>Register or Login to continue...</h3>
+  
+    </div> -->
+
+    
+    <div class="row justify-content-center">
+        <div class="homecontent text-center">
+            <h1><b>WELCOME TO CUSTOMER DASHBOARD</b></h1><br>
+            <h3>HI CUSTOMER RAISE YOUR TICKET !!!</h3>
+            <br><br><br><br>
+
+            <form (ngSubmit)="formSubmit()">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Title</mat-label>
+                    <input matInput placeholder="Enter Title Here" name="title" [(ngModel)]="ticket.title">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Select Bug Type</mat-label>
+                    <mat-select [(ngModel)]="ticket.type" name="type">
+                        <mat-option *ngFor="let Bug of Bugs" [value]="Bug.value">
+                            {{Bug.viewValue}}
+                        </mat-option>
+
+                    </mat-select>
+                </mat-form-field>
+
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Priority</mat-label>
+                    <mat-select [(ngModel)]="ticket.priority" name="priority">
+                        <mat-option *ngFor="let Priority of Priorities" [value]="Priority.value">
+                            {{Priority.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Description</mat-label>
+                    <input matInput placeholder="Enter Description Here" name="discription"
+                        [(ngModel)]="ticket.discription">
+                </mat-form-field>
+                <br><br><br>
+                <button mat-raised-button color="primary">Submit</button>
+
+
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</section>

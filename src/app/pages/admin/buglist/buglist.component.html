@@ -1,0 +1,30 @@
+<h2>Completed- Bug Details</h2>
+<div class="container">
+<table class="table ">
+    <thead>
+    <tr>
+        <th>Bug Id</th>
+        <th>description</th>
+
+    </tr>
+</thead>
+    <tbody>
+        <tr *ngFor="let bug of bugs">
+            <!-- |  paginate:{id: 'list-pagination',
+    itemsPerPage:15,
+    currentPage:page}"> -->
+            <td>{{bug.bugid}}</td>
+            <td>{{bug.discription}}</td>
+
+        </tr>
+    </tbody>
+
+</table>
+</div>
+
+<!-- <pagination-controls id="list-pagination" (pageChange)="page=$event"></pagination-controls> -->
+
+
+
+
+
